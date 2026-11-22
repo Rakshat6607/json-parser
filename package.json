@@ -1,0 +1,59 @@
+{
+  "name": "craft-json",
+  "version": "1.0.0",
+  "description": "Zero-dependency, RFC 8259 compliant JSON parser, serializer, and interactive React JSX component with pinpoint error diagnostics, AST generation, and relaxed modes.",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "craft-json": "./bin/cli.js"
+  },
+  "exports": {
+    ".": "./src/index.js",
+    "./jsx": "./src/JsonParser.jsx",
+    "./react": "./src/JsonParser.jsx"
+  },
+  "files": [
+    "src",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/parser.test.js",
+    "cli": "node bin/cli.js"
+  },
+  "keywords": [
+    "json",
+    "parser",
+    "jsx",
+    "react-json-parser",
+    "serializer",
+    "stringify",
+    "ast",
+    "rfc8259",
+    "json-parser",
+    "syntax-error",
+    "diagnostics",
+    "zero-dependency"
+  ],
+  "author": "Rakshat Agarwal",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.9",
+    "@babel/preset-react": "^7.26.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}
